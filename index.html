@@ -1,0 +1,241 @@
+<!DOCTYPE>
+<html>
+	<head>
+		<!-- Meta -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		
+		<!-- Fonts -->
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+		
+		<!-- Stylesheet -->
+		<link rel="stylesheet" href="stylesheets/style.css">
+		
+		<!-- Scripts -->
+		<script	src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+		
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+		
+		<title> Project </title>
+		
+		 <script>
+        	$(function() {
+            	$(window).scroll(function() {
+				
+                	//console.log($('header').height())
+                	if($(this).scrollTop()>$('section.home').innerHeight()-$('nav').innerHeight()) {
+						console.log($(this).scrollTop()+ " "+$('section.home').innerHeight()+ " "+$('header').innerHeight());
+						$('header').addClass('navbar-black');
+                	} else {
+                    	$('header').removeClass('navbar-black');
+                	}
+				});
+        	})
+    	</script>
+	</head>
+	
+	<body>
+		<header class="header navbar-fixed-top">
+			<!-- Logo -->
+			<a href=""><img class="logo" src="images/logo.png"></a>
+			<!-- Navigation bar -->
+			<nav class="navbar navbar-default">
+  				<div class="container-fluid">
+    				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      					<ul class="nav navbar-nav">
+        					<li class="active"><a href="#home">Home<span class="sr-only">(current)</span></a></li>
+        					<li><a href="#members">Members</a></li>
+      						<li><a href="#host">Host</a></li>
+							<li><a href="#how">How Zubia works</a></li>
+							<li><a href="#live">Broadcasting</a></li>
+							<li><a href="#faq">FAQ</a></li>
+							<li><a href="#who">Who's using Zubia</a></li>
+      					</ul>
+    				</div>
+  				</div>
+			</nav>
+		</header>
+		<section class="home" id="home">
+			<img class="telephone-1" src="images/tel1.png" alt="">
+			<div class="container">
+                    <span class="homespan">Join the</span>
+					<h1 class="homeheader">Health & Wellness </h1>
+                    <span class="homespan">Live-Streaming Community</span>
+					<img class="app-btn" src="images/US_UK_Download_on_the.png">
+                    <div class="iosspan">
+                        Get the free IOS app today
+                    </div>
+			</div>
+		</section>
+		<section class="members" id="members">
+			<div class="container">
+				<div class="img">
+					<img class="members-text" src="images/tel3.png" alt="">
+				</div>
+				<div class="apt">
+				<h3 class="section-heading-1">Members</h3>
+				<h2 class="section-heading-2">Engage Live</h2>
+				<p>Use your iPhone to interact in live-streaming health & wellness broadcasts. Get the answers and information you need in real-time. There is no fee to watch and engage with hosts.</p>
+					<ul class="member-activity">
+						<li><img class="image-1" src="images/wifi.png" alt="">Interact with Hosts Real-Time</li>
+						<li><img class="image-2" src="images/connect.png" alt="">Connect with Peers</li>
+						<li><img class="image-3" src="images/free.png" alt="">Join for free</li>
+                	</ul>
+				</div>
+			</div>
+    	</section>
+		<section class="hosts" id="host">
+			<div class="container">
+				<h3 class="section-heading-1">HOSTS</h3>
+				<h2 class="section-heading-2">Start Broadcasting</h2>
+				<p>It’s EASY to broadcast live! Schedule a broadcast, invite your followers, friends, customers, patients and expand your network. Support your organization and generate revenue for sharing your knowledge.<br> Get started today with our <b>30-Day FREE</b> Trial period.</p>
+					<ul class="member-activity">
+						<li><img class="image-1" src="images/diamond.png" alt="">Share Your Expertise</li>
+						<li><img class="image-2" src="images/people.png" alt="">Engage and Grow Your Audience</li>
+						<li><img class="image-3" src="images/money.png" alt="">Earn Revenue</li>
+                	</ul>
+			</div>
+    	</section>
+		<section class="howto" id="how">
+        	<div class="container">
+            	<div class="inside">
+                    <h3>How Zubia Works</h3>
+                    <p>Use your iPhone to interact in live-streaming health & wellness broadcasts. Get the answers and information you need in real-time. There is no fee to watch and engage with hosts.</p>
+            	</div>
+                <div class="images-container">
+                    <div class="images">
+                        <img src="images/how1.png" alt="">
+                        <h4>Find a channel of interest</h4>
+                    </div>
+                    <div class="images">
+                        <img src="images/how2.png" alt="">
+                        <h4>View or host live broadcasts</h4>
+                    </div>
+                    <div class="images">
+                        <img src="images/how3.png" alt="">
+                        <h4>Schedule your broadcasts</h4>
+                    </div>
+                    <div class="images">
+                        <img src="images/how4.png" alt="">
+                        <h4>Invite people to join</h4>
+                    </div>
+                    <div class="images">
+                        <img src="images/how5.png" alt="">
+                        <h4>Interact with our health & wellness community</h4>
+                    </div>
+                </div>
+            </div>
+		</section>
+		<section class="streaming" id="live">
+        	<div class="container">
+            	<div class="inside">
+					<h3>Live-Streaming Broadcasts</h3>
+                	<p>Use Zubia to live-stream broadcasts to your personal or professional network. Meet other members and interact with hosts on a wide variety of health and wellness topics</p>
+				</div>
+            	<div class="img">
+					<img class="image" src="images/img2.png" alt="">
+					<img class="image image-s" src="images/tel2.png" alt="">
+                	<img class="image" src="images/img2.png" alt="">
+            	</div>
+			</div>
+    	</section>
+		<section class="faq" id="faq">
+			<div class="container">
+				<div class="inside">
+					<h3>Frequently Asked Questions</h3><hr>
+				</div>
+			</div>
+			<div class="list-faq">
+				<ul>
+					<li class="section-heading">What is Zubia?</li>
+					<li class="section-second">Zubia is the <b>health and wellness live-streaming video community.</b></li>
+				</ul>
+				<ul>
+					<li class="section-heading">How much does it cost?</li>
+					<li class="section-second">Zubia is entirely <b>free to watch and interact</b> in live broadcasts. To host your own broadcasts try Zubia at no cost for 30 days. After the trial period there is a monthly fee of $10 to broadcast. Cancel anytime.</li>
+				</ul>
+				<ul>
+					<li class="section-heading">How can i earn revenue on zubia?</li>
+					<li class="section-second">Become a host and you may qualify to earn revenue.Please download the app for free and see Terms of Use for complete details.</li>
+				</ul>
+			</div>
+			<a href="" class="faq-a">Go to our FAQ Page  <img src="images/right-arrow.png" alt=""> </a>
+		</section>
+		<section class="who" id="who">
+			<div class="container">
+				<div class="inside">
+					<h3>Who's using Zubia</h3>
+					<p>People willing to share their health and wellness knowledge such as disease sufferers, hospitals, families, charities/foundations, pharmaceutical companies, medical professionals, diet/nutrition experts, scientists, researchers, and support groups all use Zubia to engage in live-streaming broadcasts</p>
+				</div>
+			</div>
+			<div class="img">
+				<div class="box">
+					<img class="image" src="images/cut5.png" alt="">
+					<h5>Scientist</h5>
+				</div>
+				<div class="box">
+					<img class="image" src="images/cut4.png" alt="">
+					<h5>Nutrition Expert</h5>
+				</div>
+				<div class="box">
+					<img class="image" src="images/cut3.png" alt="">
+					<h5>Hospital Oncologist</h5>
+				</div>
+				<div class="box">
+					<img class="image" src="images/cut2.png" alt="">
+					<h5>Medical Device Executive</h5>
+				</div>
+				<div class="box">
+					<img class="image" src="images/cut1.png" alt="">
+					<h5>Maternity Support Group</h5>
+				</div>
+				<div class="box">
+					<img class="image" src="images/cut6.png" alt="">
+					<h5>Featured Broadcasters</h5>
+				</div>
+			</div>
+		</section>
+		<footer class="footer" id="footer">
+			<div class="container">
+				<div class="inside">
+					<h3>About ZUBIA</h3>
+					<p>Two long-time friends formed Zubia after their daughters were diagnosed with different life-threatening conditions. They were seeking access to the most current information on those conditions so they created a user-friendly app using live-streaming interactive video technology. Today our members are from all areas of health and wellness, including patients and their families, hospitals, charities and foundations, pharmaceutical companies, medical professionals, diet and nutrition experts, scientists, researchers, support groups and more.
+Together we share our knowledge and experiences to benefit the entire community.</p>
+				</div>
+				<div class="outside">
+					<div class="left">
+						<img class="app-btn" src="images/US_UK_Download_on_the.png">
+						<div class="about-faq">
+						<ul>
+							<a><li>FAQ</li></a>
+							<a><li>Terms of Use</li></a>
+							<a><li>Terms of Service</li></a>
+							<a><li>Privacy Policy</li></a>
+						</ul>
+						</div>
+					</div>
+					<div class="right">
+						<div class="contact">
+							<p>CONTACT US</p>
+							<p>contact@zubialive.com</p>
+						</div>
+						<div class="copyright">
+							<img class="image" src="images/facebook.png" alt="">
+							<img class="image" src="images/twitter.png" alt="">
+							<p>&copy; 2016 Zubia</p>
+							<p>All rights Reserved</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>
